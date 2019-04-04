@@ -9,13 +9,13 @@ Data passed from node is converted into a list and loaded into the R environment
 ### Installation
 
 ```
-npm install r-script
+npm install r-script-forge
 ```
 
 ### Example
 
 ```js
-var R = require('r-script');
+var R = require('r-script-forge');
 ```
 
 ##### Synchronous
