@@ -1,6 +1,6 @@
 {
   "name": "r-script-forge",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple little module for passing data from NodeJS to R (and back again).",
   "homepage": "https://github.com/krasserp/r-script-forge",
   "bugs": "https://github.com/krasserp/r-script-forge/issues",
