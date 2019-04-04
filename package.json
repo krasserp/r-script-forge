@@ -2,14 +2,14 @@
   "name": "r-script-forge",
   "version": "0.0.1",
   "description": "A simple little module for passing data from NodeJS to R (and back again).",
-  "homepage": "http://github.com/joshkatz/r-script",
-  "bugs": "http://github.com/joshkatz/r-script/issues",
+  "homepage": "https://github.com/krasserp/r-script-forge",
+  "bugs": "https://github.com/krasserp/r-script-forge/issues",
   "license": "MIT",
   "author": {
     "name": "Josh Katz"
   },
   "main": "index.js",
-  "repository": "joshkatz/r-script",
+  "repository": "krasserp/r-script-forge",
   "dependencies": {
     "underscore": "^1.8.3"
   },
