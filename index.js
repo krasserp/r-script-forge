@@ -7,6 +7,16 @@ function init(path) {
   return obj;
 }
 
+
+function isJson(str) {
+  try {
+      JSON.parse(str);
+  } catch (e) {
+      return false;
+  }
+  return true;
+}
+
 function R(path) {
   this.d = {};
   this.path = path;
@@ -36,7 +46,13 @@ R.prototype.call = function(_opts, _callback) {
      body += d;
   });
   child.on("close", function(code) {
-    callback(null, JSON.parse(body));
+    var returnValue = body;
+    if(isJson(body)){
+      returnValue = JSON.parse(body);
+    } else {
+      returnValue = {'error': 'R script error'};
+    }
+    callback(null, returnValue);
   });
 };
 
